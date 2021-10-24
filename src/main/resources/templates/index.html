@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Weather</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/main.css">
+
+    <script src="https://kit.fontawesome.com/bcebcb055e.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<header>
+    <div class="header-img">
+        <div class="header-text">
+            <h1>Your Weather</h1>
+        </div>
+        <div class="header-bg"></div>
+    </div>
+</header>
+
+<nav>
+    <ul class="nav">
+        <li class="nav-item"><a href="#"><i class="fas fa-home"></i></a></li>
+        <li class="nav-item"><a href="#"><i class="fas fa-phone-square-alt"></i></a></li>
+        <li class="nav-item"><a href="#"><i class="fas fa-cog"></i></a></li>
+    </ul>
+</nav>
+
+<main class="main-attention">
+
+    <h2>Attention!</h2>
+
+    <div class="text-attention top"></div>
+    <div class="text-attention bg"></div>
+    <div class="text-attention text">
+        <p>
+            <span> If you are using the site for the first time, follow this instructions:</span>
+            To check the weather in your city, first create a free account <a href="https://weatherstack.com/"
+                                                                              target="_blank">here
+        </a> and copy the key, and then enter it in the settings.
+        </p>
+    </div>
+
+</main>
+
+<main class="main-weather">
+    <div class="weather-box"></div>
+    <div class="weather-bg"></div>
+    <div class="weather-currently">
+        <h2>Weather</h2>
+        <div class="search-box">
+            <form>
+                <input class="weather-currently-input" type="text" placeholder="Enter the city name" value="">
+                <div class="submit-box">
+<!--                    <input class= type="submit">-->
+                    <button class="weather-currently-open" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+
+                </div>
+            </form>
+        </div>
+    </div>
+</main>
+</body>
+</html>
+
+<!--<form action="#" th:action="@{/weather/cities}">-->
+<!--    <input id="search" type="search" placeholder="Search by location" name="city" value=""-->
+<!--           aria-label="Search"/>-->
+<!--    <input id="submit" class="btn-outline-success" type="submit" value="Search"></input>-->
+<!--</form>-->

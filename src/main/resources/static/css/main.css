@@ -1,0 +1,185 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* header */
+
+.header-img {
+    position: relative;
+    height: 500px;
+    background-image: url('../img/landscape.jpg');
+    background-size: cover;
+    background-position: 0 50%;
+}
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    z-index: 5;
+}
+
+.header-text h1 {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* nawigacja */
+
+.nav {
+    height: 60px;
+    background-color: #333;
+    text-align: center;
+    line-height: 60px;
+}
+
+.nav-item {
+    display: inline-block;
+}
+
+.nav-item a {
+    padding: 0 60px;
+    color: #fff;
+    font-size: 36px;
+    transition: color .3s;
+}
+
+.nav-item a:hover {
+    color: #0086f3;
+}
+
+/* main */
+
+.main-attention {
+    margin: 50px auto;
+    width: 700px;
+    border: 2px solid #000;
+    transition: transform .3s, width .3s;
+}
+
+.main-attention:hover {
+    transform: scale(1.5);
+    width: 700px;
+}
+
+.main-attention h2 {
+    position: relative;
+    top: 10px;
+    /*margin-bottom: 20px;*/
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: red;
+}
+
+.text-attention p {
+    text-align: center;
+    padding: 15px 15px;
+}
+
+.text-attention p span {
+    display: block;
+    content: '\A';
+    white-space: pre;
+}
+
+.text-attention p a {
+    text-decoration: none;
+    color: #0086f3;
+}
+
+.main-weather {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 300px;
+    width: 920px;
+    height: 450px;
+    background-color: #224f83;
+    border-radius: 25px;
+    border: 2px solid black;
+    color: white;
+}
+
+.weather-currently {
+    position: relative;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 880px;
+    height: 45px;
+    background-color: #1b4778;
+}
+
+.weather-currently h2 {
+    text-align: left;
+    padding-left: 20px;
+    line-height: 45px;
+    letter-spacing: 1.2px;
+}
+
+/*search-box*/
+
+.search-box {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 45px;
+    width: 43%;
+    background-color: #1b4778;
+}
+
+
+.weather-currently-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 17px;
+    height: 45px;
+    line-height: 40px;
+    background-color: #fff;
+    cursor: pointer;
+    width: 87.5%;
+    /*vertical-align: middle;*/
+    text-indent: 10px;
+    border: none;
+}
+
+.weather-currently-open {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #1c8da2;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: transparent;
+    border: none;
+}
+
+.submit-box .fa-search {
+    position: absolute;
+    top: 0;
+    right: 11px;
+    line-height: 45px;
+    font-size: 23px;
+    color: white;
+}
+
+
+
+
+

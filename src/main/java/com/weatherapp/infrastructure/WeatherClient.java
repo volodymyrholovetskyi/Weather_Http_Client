@@ -1,10 +1,10 @@
 package com.weatherapp.infrastructure;
 
-import com.weatherapp.infrastructure.weather.dto.WeatherDTO;
+import com.weatherapp.infrastructure.weather.dto.WeatherHttpDto;
 
 import java.util.Optional;
 
 public interface WeatherClient {
 
-   Optional<WeatherDTO> getWeather(String city) throws RuntimeException;
+    Optional<WeatherHttpDto> getWeatherHttpClient(String city, String accessKey) throws RuntimeException;
 }
